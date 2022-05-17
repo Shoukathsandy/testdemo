@@ -1,0 +1,19 @@
+.App {
+  margin: 15px;
+  text-align: center;
+}
+
+.in{
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post{
+  margin-top: 15px;
+}
+img{
+  max-width: 16rem;
+  max-height: 20rem;
+  border-radius: 15px;
+}

@@ -1,20 +1,65 @@
-
 .App {
-  background-color: lightcoral;
-  font-family: sans-serif;
   text-align: center;
-}
-.profile-pic {
-  height: 300px;
-}
-.App > div:nth-child(2) > .profile-pic {
-  border-radius: 30px;
-}
-.App > div:nth-child(3) > .profile-pic {
-  border-radius: 20px;
+  background-color: rgb(253, 253, 253);
 }
 
-.welcome {
-  color: orangered;
-  font-family: "Dancing Script", cursive;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.movie-poster{
+  width:340px;
+  height:500px;
+  object-fit: cover;
+ 
+  border-top-left-radius: 20px;    
+  border-top-right-radius:20px;
+  
+}
+.movie-container{
+  margin-top: 12px;
+  border-radius: 30px;
+  width:340px;
+  box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+  box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+}
+.movie-specs{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-name{
+  /* margin-left:10px; */
+  padding-left: 20px;
+  /* margin:0; */
+  font-size:24px;
+}
+.movie-summary{
+  padding:20px;
+  margin-top:0;
+  background-color:lightcoral;
+}
+.movie-rating{
+  margin-right: 10px;
+  font-size:18px;
+}
+.movie-list{
+  border-radius: 10px;
+  display:flex;
+  gap:16px;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.movie-like{
+  padding:20px;
+  margin-left:10px;
+  display:flex;
+  gap:10px;
+}
+ .add-movie-form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;margin:16px;
 }
