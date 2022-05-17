@@ -14,7 +14,7 @@ return(
          {/* <ThemeProvider theme={darkTheme}>
       <main>This app is using the dark mode</main>
     </ThemeProvider> */}
-  jfgufk
+  
         <AddColor/>
     </div>
 );
