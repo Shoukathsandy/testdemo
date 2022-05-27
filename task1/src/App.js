@@ -75,6 +75,7 @@ export default function App(){
       const [poster,setPoster]=useState("");  
       const [rating,setRating]=useState("");
       const [summary,setSummary]=useState("");
+
       return(
         
     <div className="App">
@@ -82,8 +83,9 @@ export default function App(){
         <div className="add-movie-form">
         <input type="text" 
          placeholder="Name" 
-        onChange={(event)=>setName(event.target.value)} 
-          />
+        onChange={(event)=>setName(event.target.value) }    />
+       
+
         <input type="text" 
         placeholder="Poster" 
         onChange={(event)=>setPoster(event.target.value)} 
@@ -96,6 +98,7 @@ export default function App(){
         placeholder="Summary"
         onChange={(event)=>setSummary(event.target.value)} 
         />
+        
         <button onClick={()=>{
           const newMovie={
             name:name,
@@ -107,15 +110,19 @@ export default function App(){
         }}>Add Movie</button>
         </div>
   <div className="movie-list">
+    
     {movieList.map(({name,poster,rating,summary})=>(
+     
     <Movie 
     name={name} 
     poster={poster}
     rating={rating} 
     summary={summary}/>
+    
     ))}
    
-    </div>
+    </div>  
+    
     </div>
  ); 
 }

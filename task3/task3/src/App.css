@@ -1,5 +1,56 @@
 .App {
   text-align: center;
-  background-color: rgb(0, 224, 150);
-  
+ 
+
 }
+
+.movie-container{
+  margin-top: 12px;
+  border-radius: 30px;
+  width:340px;
+  box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+  box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+}
+.movie-poster{
+  height:500px;
+  width:340px;
+  object-fit: cover;
+  /* border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  border-radius: 20px;
+}
+.movie-specs{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-name{
+  padding-left: 20px;
+  font-size: 24px;
+}
+.movie-rating{
+  margin-right: 10px;
+  font-size: 18px;
+}
+.movie-summary{
+  padding: 20px;
+  margin-top:0px;
+  background-color: rgb(226, 130, 210);
+}
+.add-movie-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin:16px;
+}
+.movie-list{
+  border-radius: 10px;
+  display:flex;
+  gap:16px;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+/* .nav{
+
+} */
