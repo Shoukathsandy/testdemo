@@ -5,6 +5,7 @@
 }
 
 .movie-container{
+  height: min-content;
   margin-top: 12px;
   border-radius: 30px;
   width:340px;
@@ -26,11 +27,11 @@
   justify-content: space-between;
 }
 .movie-name{
-  padding-left: 20px;
+  margin: 0px;
   font-size: 24px;
 }
 .movie-rating{
-  margin-right: 10px;
+  margin-right: 20px;
   font-size: 18px;
 }
 .movie-summary{
@@ -54,3 +55,22 @@
 /* .nav{
 
 } */
+
+
+.cnt{
+  margin: 2px;
+}
+.btn{
+  margin: 3px;
+}
+img{
+object-fit: contain;
+ height: 100vh;
+
+}
+.into{
+  margin: 0px;
+}
+.rat{
+  display: flex;
+}
