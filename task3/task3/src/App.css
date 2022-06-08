@@ -1,76 +1,84 @@
 .App {
   text-align: center;
- 
-
 }
 
-.movie-container{
+.movie-container {
+  display: flex;
   height: min-content;
   margin-top: 12px;
   border-radius: 30px;
-  width:340px;
-  box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+  width: 340px;
+  /* box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
   -moz-box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
-  box-shadow: 10px 10px 5px 0px rgba(107,104,107,1);
+  box-shadow: 10px 10px 5px 0px rgba(107,104,107,1); */
 }
-.movie-poster{
-  height:500px;
-  width:340px;
+.movie-poster {
+  height: 500px;
+  width: 340px;
   object-fit: cover;
   /* border-top-left-radius: 20px;
   border-bottom-right-radius: 20px; */
   border-radius: 20px;
 }
-.movie-specs{
-  display:flex;
+.movie-specs {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.movie-name{
+.movie-name {
   margin: 0px;
   font-size: 24px;
 }
-.movie-rating{
+.movie-rating {
   margin-right: 20px;
   font-size: 18px;
 }
-.movie-summary{
+.movie-summary {
   padding: 20px;
-  margin-top:0px;
+  margin-top: 0px;
   background-color: rgb(226, 130, 210);
 }
-.add-movie-form{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin:16px;
+.add-movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px;
 }
-.movie-list{
+.movie-list {
   border-radius: 10px;
-  display:flex;
-  gap:16px;
+  display: flex;
+  gap: 16px;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 /* .nav{
 
 } */
 
-
-.cnt{
+.cnt {
   margin: 2px;
 }
-.btn{
+.btn {
   margin: 3px;
 }
-img{
-object-fit: contain;
- height: 100vh;
-
+img {
+  object-fit: contain;
+  height: 100vh;
 }
-.into{
+.into {
   margin: 0px;
 }
-.rat{
+.rat {
   display: flex;
+}
+.ed {
+  margin-left: auto;
+}
+
+.user-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 10px;
 }

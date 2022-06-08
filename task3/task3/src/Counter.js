@@ -13,7 +13,7 @@ export function Counter() {
                 </Badge>
             </IconButton>
             <IconButton color="primary" aria-label="Like" onClick={() => setDislike(dislike + 1)}>
-                👎 
+                👎
                 <Badge badgeContent={dislike} color="primary">
                 </Badge>
             </IconButton>

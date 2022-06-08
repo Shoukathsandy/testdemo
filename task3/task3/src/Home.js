@@ -1,5 +1,5 @@
 export default function Home() {
     return (
-        <div>home for home page</div>
+        <div><img src="https://wallpaperaccess.com/full/1497614.jpg" alt="welcome" /></div>
     );
 }

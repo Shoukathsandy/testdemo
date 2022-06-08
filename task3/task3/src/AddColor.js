@@ -10,9 +10,13 @@ export function Addcolor() {
     return (
         <div >
             <input type="text" value={color} style={styles}
-                onChange={(e) => setColor(e.target.value)}></input>
-            <button className="btn btn-secondary" onClick={() => setColorlist([...colorlist, color])}>Add Color</button>
-            {colorlist.map((clr,index) => (<Colorbox color={clr} key={index} />))}
+                onChange={(e) => setColor(e.target.value)}>
+            </input>
+            <button className="btn btn-secondary"
+                onClick={() => setColorlist([...colorlist, color])}>
+                Add Color
+            </button>
+            {colorlist.map((clr, index) => (<Colorbox color={clr} key={index} />))}
         </div>
     );
 }
