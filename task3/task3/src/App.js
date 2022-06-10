@@ -123,7 +123,7 @@ export default function App() {
               <Button
                 startIcon={mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
                 color="inherit" onClick={() => setMode(mode === "dark" ? "light" : "dark")}>
-                Dark mode
+                {/* Dark mode */} {mode === 'dark' ? " Light Mode" : "Dark Mode"}
               </Button>
             </Toolbar>
           </AppBar>
