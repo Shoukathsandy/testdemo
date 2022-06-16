@@ -71,10 +71,15 @@ img {
 .rat {
   display: flex;
 }
-.ed {
+.dkp{
+  display:flex;
+}
+.ed{
   margin-left: auto;
 }
-
+.dk{
+  margin-left: auto;
+}
 .user-form{
   display: flex;
   flex-direction: column;

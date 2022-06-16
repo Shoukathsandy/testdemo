@@ -110,17 +110,17 @@ export default function App() {
   });
   return (
     <ThemeProvider theme={theme} >
-      <Paper elevation={3} style={{ minHeight: "100vh" }} >
+      <Paper elevation={3}  className="dkp" style={{ minHeight: "100vh" }} >
 
         <div className="App">
 
           <AppBar position="static">
-            <Toolbar>
+            <Toolbar className="dkp">
               <Button color="inherit" onClick={() => { navigate('/') }}>Home</Button>
               <Button color="inherit" onClick={() => { navigate('/addcolor') }}>Addcolor</Button>
               <Button color="inherit" onClick={() => { navigate('/list2') }}>Movie list</Button>
               <Button color="inherit" onClick={() => { navigate('/add') }}>Add movie </Button>
-              <Button
+              <Button className='dk'
                 startIcon={mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
                 color="inherit" onClick={() => setMode(mode === "dark" ? "light" : "dark")}>
                 {/* Dark mode */} {mode === 'dark' ? " Light Mode" : "Dark Mode"}
