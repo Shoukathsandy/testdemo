@@ -110,7 +110,7 @@ export default function App() {
   });
   return (
     <ThemeProvider theme={theme} >
-      <Paper elevation={3}  className="dkp" style={{ minHeight: "100vh" }} >
+      <Paper elevation={3}  className="dkp" style={{ minWidth: "100vh" }} >
 
         <div className="App">
 
