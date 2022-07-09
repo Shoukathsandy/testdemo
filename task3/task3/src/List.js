@@ -17,7 +17,7 @@ export function List() {
     useEffect(() => getmovie(), []);
     const deleteMoviecard = (id) => {
         console.log("delete movie id", id);
-        fetch(`${API}//users/${id}`, { method: "DELETE" })
+        fetch(`${API}users/${id}`, { method: "DELETE" })
             .then(() => getmovie())
     }
     const navigate = useNavigate();

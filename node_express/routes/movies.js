@@ -25,7 +25,7 @@ router.get("/:id",async function(req,res){
      res.send(result);
     });
   
-    router.delete("/:id",async function(req,res){
+    router.delete("/:id",auth,async function(req,res){
       console.log(req.params); 
         const {id}= req.params;
         const movie=  await deletemoviebyid(id);

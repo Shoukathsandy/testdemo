@@ -8,7 +8,7 @@ export function Editmovie() {
   const [movie, setMovie] = useState(null);
   const { movieid } = useParams();
   useEffect(() => {
-    fetch(`${API}/users/${movieid}`)
+    fetch(`${API}users/${movieid}`)
       .then((data) => data.json())
       .then((users) => setMovie(users))
   }, [movieid]
@@ -44,7 +44,7 @@ function Edit({ movie }) {
     //1. method- POST
     //2.data- (newmovie) body: json.stringify
     //3. headers - json 
-    fetch(`${API}/users/${movie.id}`,
+    fetch(`${API}users/${movie.id}`,
       {
         method: "PUT",
         body: JSON.stringify(newmovie),

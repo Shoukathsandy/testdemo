@@ -48,7 +48,7 @@ export function Movieadd() {
         //1. method- POST
         //2.data- (newmovie) body: json.stringify
         //3. headers - json 
-        fetch(`${API}/users`,
+        fetch(`${API}users`,
             {
                 method: "POST",
                 body: JSON.stringify(newmovie),
